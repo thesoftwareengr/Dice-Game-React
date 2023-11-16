@@ -1,0 +1,30 @@
+.RollDice {
+    text-align: center;
+  }
+  
+  .DiceContainer {
+    display: flex;
+    justify-content: space-around;
+    margin-bottom: 20px;
+  }
+  
+  i.fas {
+    font-size: 5rem;
+    color: #333;
+  }
+  
+  button {
+    font-size: 1rem;
+    padding: 10px 20px;
+    background-color: #3498db;
+    color: #fff;
+    border: none;
+    cursor: pointer;
+    transition: background-color 0.3s;
+  }
+  
+  button:disabled {
+    background-color: #bdc3c7;
+    cursor: not-allowed;
+  }
+  
