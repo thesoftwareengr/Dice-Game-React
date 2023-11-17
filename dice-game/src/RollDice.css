@@ -7,6 +7,12 @@
   background-position: center;
 }
 
+.contains-two-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  
+}
 .RollDice {
   text-align: center;
 }
@@ -16,9 +22,10 @@
   justify-content: center;
   margin-bottom: 50px;
   margin-top: 10%;
+  padding: 10px;
 }
 .fa-2xl {
-  font-size: 4em;
+  font-size: 10em;
 }
 
 
