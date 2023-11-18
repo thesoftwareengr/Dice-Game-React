@@ -1,11 +1,29 @@
 /* RollDice.css */
-*{
-  background-image: url('./2400-grunge-cement-wall-and-wood-floor-background-and-texture-with-space.jpg');
+body{
+  background-image: url('../src/Components/dice-game.avif');
   background-repeat: no-repeat;
   background-size: cover;
   background-attachment: fixed;
   background-position: center;
  
+}
+
+h1 {
+    text-align: center;
+}
+.container{
+    background-color: #EEF5FF;
+    width: 400px;
+    border: 15px solid green;
+    padding: 40px;
+    margin: 20px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
 }
 
 
@@ -19,7 +37,9 @@
   
 }
 .RollDice {
+    margin: 50px;
   text-align: center;
+
 }
 
 .DiceContainer {
@@ -27,7 +47,8 @@
   justify-content: center;
   margin-bottom: 50px;
   margin-top: 10%;
-  padding: 50px;
+  margin:  10% 40px;
+  padding: 0px;
 }
 .fa-2xl {
   font-size: 10em;
@@ -54,7 +75,7 @@
 
 
 .button {
-      margin-top: 8%;
+      margin-top: 25%;
     width: 220px;
     height: 60px;
     padding: 10px 20px;
