@@ -25,19 +25,23 @@ const RollDice = () => {
   return (
     <div className="RollDice">
       <div className="contains-two-container">
-        <Die
-          className={`DiceContainer ${rolling ? "rolling" : ""}`}
-          face={die1}
-        />
-
-        <Die
-          className={`DiceContainer ${rolling ? "rolling" : ""}`}
-          face={die2}
-        />
+        <div className={`DiceContainer ${rolling ? "rolling" : ""}`}>
+          <Die
+            className={`DiceContainer ${rolling ? "rolling" : ""}`}
+            face={die1}
+          />
+        </div>
+        <div className={`DiceContainer ${rolling ? "rolling" : ""}`}>
+          <Die
+            className={`DiceContainer ${rolling ? "rolling" : ""}`}
+            face={die2}
+          />
+        </div>
+       
       </div>
       <button className="button" onClick={roll} disabled={rolling}>
-        {rolling ? "Rolling..." : "Roll Dice"}
-      </button>
+          {rolling ? "Rolling..." : "Roll Dice"}
+        </button>
     </div>
   );
 };
