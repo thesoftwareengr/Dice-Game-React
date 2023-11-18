@@ -1,18 +1,28 @@
 /* RollDice.css */
-body{
-  background-image: url('../src/Components/dice-game.avif');
-  background-repeat: no-repeat;
-  background-size: cover;
-  background-attachment: fixed;
-  background-position: center;
- 
+body {
+    position: relative;
+    background-image: url('../src/Components/dice.jpg');
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-attachment: fixed;
+    background-position: center;
+    overflow: hidden;
 }
 
-h1 {
-    text-align: center;
+body::before {
+    content: "";
+    position: fixed;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    z-index: -1;
+    background: inherit;
+    filter: blur(8px); /* Adjust the blur amount as needed */
 }
-.container{
-    background-color: #EEF5FF;
+
+.container {
+    background-color: rgba(238, 245, 255, 0.7); /* Use rgba for transparency */
     width: 400px;
     border: 15px solid green;
     padding: 40px;
@@ -24,6 +34,30 @@ h1 {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 25px;
+    backdrop-filter: blur(8px); /* Adjust the blur amount as needed */
+}
+
+h1 {
+    text-align: center;
+    color: #F2FFE9;
+    font-size: 4em;
+}
+.containerr{
+    background-color: #eef5ff86;
+    width: 400px;
+    border: 15px solid rgba(245, 245, 245, 0.205);
+    padding: 40px;
+    margin: 20px;
+    margin-top:300px;
+    margin-left: auto;
+    margin-right: auto;
+    position: absolute;
+    top: 50%;
+    left: 50%;
+    transform: translate(-50%, -50%);
+    border-radius: 25px;
+    box-shadow: 0 0 20px rgba(0, 0, 255, 1);
+    border-color: #e4e4e400;
 }
 
 
@@ -39,6 +73,7 @@ h1 {
 .RollDice {
     margin: 50px;
   text-align: center;
+  
 
 }
 
@@ -75,10 +110,9 @@ h1 {
 
 
 .button {
-      margin-top: 25%;
+      margin-top: 30%;
     width: 220px;
     height: 60px;
-    padding: 10px 20px;
     outline: none;
     color: #fff;
     background: #3498db;

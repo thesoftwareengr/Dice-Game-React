@@ -25,7 +25,7 @@ const RollDice = () => {
   return (
     <>
       <h1>Roll Dice Game</h1>
-      <div className="container">
+      <div className="containerr">
         <div className="RollDice">
           <div className="contains-two-container">
             <div className={`DiceContainer ${rolling ? "rolling" : ""}`}>
