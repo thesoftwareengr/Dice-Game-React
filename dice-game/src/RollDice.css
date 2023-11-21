@@ -1,4 +1,4 @@
-/* RollDice.css */
+
 body {
     position: relative;
     background-image: url('../src/Components/dice.jpg');
@@ -18,11 +18,11 @@ body::before {
     height: 100%;
     z-index: -1;
     background: inherit;
-    filter: blur(8px); /* Adjust the blur amount as needed */
+    filter: blur(8px); 
 }
 
 .container {
-    background-color: rgba(238, 245, 255, 0.7); /* Use rgba for transparency */
+    background-color: rgba(238, 245, 255, 0.7); 
     width: 400px;
     border: 15px solid green;
     padding: 40px;
@@ -34,7 +34,7 @@ body::before {
     left: 50%;
     transform: translate(-50%, -50%);
     border-radius: 25px;
-    backdrop-filter: blur(8px); /* Adjust the blur amount as needed */
+    backdrop-filter: blur(8px); 
 }
 
 h1 {
@@ -100,20 +100,20 @@ h1 {
 
 
 .DiceContainer.rolling  {
-  animation: spin 2s linear infinite; /* Added spin animation */
+  animation: spin 2s linear infinite; 
 }
 
 @keyframes spin {
   from {
-    transform: rotate(0deg); /* Start with no rotation */
+    transform: rotate(0deg); 
   }
   to {
-    transform: rotate(360deg); /* Rotate 360 degrees */
+    transform: rotate(360deg);
   }
 }
 
 .DiceContainer.rolling .dice.spinning {
-  animation: none; /* Disable the global spin animation */
+  animation: none; 
 } 
 
 
