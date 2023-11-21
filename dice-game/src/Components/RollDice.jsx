@@ -16,7 +16,7 @@ const RollDice = () => {
       setTimeout(() => {
         const newDie1 = faces[Math.floor(Math.random() * faces.length)];
         const newDie2 = faces[Math.floor(Math.random() * faces.length)];
-        const newScore = faces.indexOf(newDie1) + faces.indexOf(newDie2) + 2; // +2 because indices are zero-based
+        const newScore = faces.indexOf(newDie1) + faces.indexOf(newDie2) + 2; 
         setDie1(newDie1);
         setDie2(newDie2);
         setScore(newScore);
