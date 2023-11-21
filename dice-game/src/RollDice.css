@@ -42,13 +42,22 @@ h1 {
     color: #F2FFE9;
     font-size: 4em;
 }
+
+.score{
+  text-align: center;
+  color: #F2FFE9;
+  font-size: 75px;
+  margin-top: 60px;
+  font-weight: bold;
+  
+}
 .containerr{
     background-color: #eef5ff86;
     width: 400px;
     border: 15px solid rgba(245, 245, 245, 0.205);
     padding: 40px;
     margin: 20px;
-    margin-top:300px;
+    margin-top:350px;
     margin-left: auto;
     margin-right: auto;
     position: absolute;
@@ -110,7 +119,7 @@ h1 {
 
 
 .button {
-      margin-top: 30%;
+      margin-top: 3%;
     width: 220px;
     height: 60px;
     outline: none;

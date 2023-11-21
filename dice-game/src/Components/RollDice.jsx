@@ -7,6 +7,7 @@ const RollDice = () => {
   const [die1, setDie1] = useState("one");
   const [die2, setDie2] = useState("one");
   const [rolling, setRolling] = useState(false);
+  const [score, setScore] = useState(0);
 
   const roll = () => {
     if (!rolling) {
@@ -15,8 +16,10 @@ const RollDice = () => {
       setTimeout(() => {
         const newDie1 = faces[Math.floor(Math.random() * faces.length)];
         const newDie2 = faces[Math.floor(Math.random() * faces.length)];
+        const newScore = faces.indexOf(newDie1) + faces.indexOf(newDie2) + 2; // +2 because indices are zero-based
         setDie1(newDie1);
         setDie2(newDie2);
+        setScore(newScore);
         setRolling(false);
       }, 1000);
     }
@@ -41,6 +44,7 @@ const RollDice = () => {
               />
             </div>
           </div>
+          <p className="score">{score}</p>
           <button className="button" onClick={roll} disabled={rolling}>
             {rolling ? "Rolling..." : "Roll Dice"}
           </button>
